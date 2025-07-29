@@ -29,18 +29,18 @@
     --muted: 217 32% 14%;
     --muted-foreground: 210 15% 65%;
 
-    /* Rich coffee brown accent */
-    --accent: 30 25% 25%;
-    --accent-foreground: 34 8% 91%;
-    --accent-light: 30 15% 15%;
+    /* Light cream accent */
+    --accent: 45 25% 80%;
+    --accent-foreground: 222 47% 4%;
+    --accent-light: 45 15% 70%;
 
-    /* Deep coffee brown */
-    --coffee: 30 25% 25%;
-    --coffee-light: 30 35% 35%;
+    /* Soft light cream */
+    --coffee: 45 25% 80%;
+    --coffee-light: 45 35% 85%;
 
-    /* Warm coffee highlights */
-    --warm: 30 25% 25%;
-    --warm-foreground: 34 8% 91%;
+    /* Warm light highlights */
+    --warm: 45 25% 80%;
+    --warm-foreground: 222 47% 4%;
 
     --destructive: 0 65% 55%;
     --destructive-foreground: 35 15% 96%;
