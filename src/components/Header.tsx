@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Coffee, MapPin, Clock } from "lucide-react";
+import { Menu, X, MapPin, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
+import feelsCoffeeLogo from "@/assets/feels-coffee-logo.png";
 
 interface HeaderProps {
   activeSection: string;
@@ -46,7 +47,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => handleNavClick("home")}
             >
-              <Coffee className="h-8 w-8 text-coffee" />
+              <img src={feelsCoffeeLogo} alt="Feels Coffee Logo" className="h-8 w-8 object-contain" />
               <div>
                 <h1 className="text-2xl font-bold text-coffee">Feels Coffee</h1>
                 <p className="text-xs text-muted-foreground">Kigali</p>
@@ -100,7 +101,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               {/* Menu Header */}
               <div className="p-4 border-b border-border">
                 <div className="flex items-center gap-2">
-                  <Coffee className="h-6 w-6 text-coffee" />
+                  <img src={feelsCoffeeLogo} alt="Feels Coffee Logo" className="h-6 w-6 object-contain" />
                   <div>
                     <h2 className="text-lg font-bold text-coffee">Feels Coffee</h2>
                     <p className="text-xs text-muted-foreground">Kigali</p>

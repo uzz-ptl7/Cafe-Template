@@ -29,17 +29,17 @@
     --muted: 217 32% 14%;
     --muted-foreground: 210 15% 65%;
 
-    /* Elegant copper accent - darker */
-    --accent: 24 60% 35%;
+    /* Vibrant copper accent - lively */
+    --accent: 24 85% 55%;
     --accent-foreground: 222 47% 4%;
-    --accent-light: 24 40% 18%;
+    --accent-light: 24 70% 35%;
 
-    /* Rich coffee brown - darker */
-    --coffee: 24 60% 35%;
-    --coffee-light: 24 40% 50%;
+    /* Rich coffee brown - lively */
+    --coffee: 24 85% 55%;
+    --coffee-light: 24 70% 70%;
 
-    /* Warm copper highlights - darker */
-    --warm: 24 60% 35%;
+    /* Warm copper highlights - lively */
+    --warm: 24 85% 55%;
     --warm-foreground: 222 47% 4%;
 
     --destructive: 0 65% 55%;
