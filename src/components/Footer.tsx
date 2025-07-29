@@ -25,13 +25,13 @@ const Footer = ({ setActiveSection }: FooterProps) => {
   ];
 
   return (
-    <footer className="bg-coffee text-primary-foreground">
+    <footer className="bg-gradient-to-b from-coffee/90 to-coffee text-primary-foreground" style={{ backgroundColor: 'hsl(24 60% 25%)' }}>
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+      <div className="container mx-auto px-4 py-16 text-center">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Brand Section */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
+          <div className="lg:col-span-1 text-center lg:text-left">
+            <div className="flex items-center gap-2 mb-6 justify-center lg:justify-start">
               <Coffee className="h-8 w-8 text-warm-foreground" />
               <div>
                 <h3 className="text-2xl font-bold">Feels Coffee</h3>
@@ -42,7 +42,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
               Where every bite and sip feels like home. Experience Kigali's coziest café 
               with premium coffee, diverse cuisine, and warm hospitality.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               <a 
                 href="https://instagram.com/feels_coffeexstudio" 
                 target="_blank" 
@@ -55,7 +55,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -72,7 +72,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
           </div>
 
           {/* Menu Highlights */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="text-lg font-semibold mb-6">What We Offer</h4>
             <ul className="space-y-3">
               {menuHighlights.map((item, index) => (
@@ -84,10 +84,10 @@ const Footer = ({ setActiveSection }: FooterProps) => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="text-lg font-semibold mb-6">Visit Us</h4>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 justify-center lg:justify-start">
                 <MapPin className="h-5 w-5 text-warm-foreground mt-0.5" />
                 <div>
                   <p className="text-primary-foreground/90">
@@ -96,19 +96,19 @@ const Footer = ({ setActiveSection }: FooterProps) => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <Clock className="h-5 w-5 text-warm-foreground" />
                 <p className="text-primary-foreground/90">
                   Daily: 07:30 - 23:00
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <Phone className="h-5 w-5 text-warm-foreground" />
                 <p className="text-primary-foreground/90">
                   +250 123 456 789
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <Mail className="h-5 w-5 text-warm-foreground" />
                 <p className="text-primary-foreground/90">
                   hello@feelscoffee.rw
