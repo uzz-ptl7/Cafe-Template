@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Feels Coffee Design System - Warm, earthy, cozy café atmosphere */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core café colors - warm and inviting */
+    --background: 35 15% 96%;
+    --foreground: 25 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 25% 98%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 25% 98%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Coffee-inspired primary colors */
+    --primary: 25 35% 25%;
+    --primary-foreground: 35 15% 96%;
+    --primary-hover: 25 40% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm secondary tones */
+    --secondary: 35 20% 88%;
+    --secondary-foreground: 25 35% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted earth tones */
+    --muted: 35 15% 90%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent green for freshness */
+    --accent: 120 20% 35%;
+    --accent-foreground: 35 15% 96%;
+    --accent-light: 120 15% 85%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Coffee bean brown */
+    --coffee: 25 45% 20%;
+    --coffee-light: 25 25% 75%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warm highlights */
+    --warm: 35 40% 85%;
+    --warm-foreground: 25 35% 25%;
 
-    --radius: 0.5rem;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 35 15% 96%;
+
+    --border: 35 15% 85%;
+    --input: 35 15% 90%;
+    --ring: 25 35% 25%;
+
+    --radius: 0.75rem;
+
+    /* Coffee-themed gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 45% 20% / 0.8), hsl(25 35% 25% / 0.6));
+    --gradient-warm: linear-gradient(180deg, hsl(35 20% 88%), hsl(35 15% 92%));
+    --gradient-coffee: linear-gradient(135deg, hsl(25 45% 20%), hsl(25 35% 25%));
+    
+    /* Elegant shadows */
+    --shadow-soft: 0 4px 20px hsl(25 25% 15% / 0.1);
+    --shadow-warm: 0 8px 30px hsl(35 40% 85% / 0.4);
+    --shadow-coffee: 0 10px 40px hsl(25 45% 20% / 0.15);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
