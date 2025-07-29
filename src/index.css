@@ -52,10 +52,18 @@
     --radius: 0.75rem;
 
     /* Modern coffee gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(222 47% 4% / 0.9), hsl(220 47% 6% / 0.7));
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(222 47% 4% / 0.9),
+      hsl(220 47% 6% / 0.7)
+    );
     --gradient-warm: linear-gradient(180deg, hsl(34 8% 91%), hsl(34 12% 95%));
-    --gradient-coffee: linear-gradient(135deg, hsl(24 70% 60%), hsl(24 50% 50%));
-    
+    --gradient-coffee: linear-gradient(
+      135deg,
+      hsl(24 70% 60%),
+      hsl(24 50% 50%)
+    );
+
     /* Sophisticated shadows */
     --shadow-soft: 0 4px 25px hsl(222 47% 4% / 0.15);
     --shadow-warm: 0 8px 35px hsl(24 70% 60% / 0.2);

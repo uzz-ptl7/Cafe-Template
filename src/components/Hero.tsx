@@ -51,7 +51,7 @@ const Hero = ({ setActiveSection }: HeroProps) => {
         {/* Call to Action */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
-            variant="hero" 
+            variant="outline" 
             size="lg"
             onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
             className="text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
@@ -62,7 +62,7 @@ const Hero = ({ setActiveSection }: HeroProps) => {
             variant="outline" 
             size="lg"
             onClick={() => setActiveSection("contact")}
-            className="text-lg px-8 py-6 border-white hover:border-black text-white hover:bg-black hover:text-coffee duration-700"
+            className="text-lg px-8 py-6 border-white text-white hover:bg-black hover:text-coffee duration-700"
           >
             Book a Table
           </Button>

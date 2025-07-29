@@ -96,14 +96,14 @@ const Gallery = () => {
                 </div>
                 
                 {/* Category Badge */}
-                <div className="absolute top-3 left-3">
-                  <Badge variant="secondary" className="bg-white/90 text-coffee">
+                <div className="absolute top-2 left-2 group-hover:opacity-100 opacity-0 transition-opacity duration-700">
+                  <Badge variant="secondary" className="bg-black text-coffee">
                     {filters.find(f => f.id === item.category)?.name}
                   </Badge>
                 </div>
 
                 {/* Image Info Overlay - Only visible on hover */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-black/70 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                   <h4 className="font-semibold text-white mb-1">
                     {item.title}
                   </h4>
@@ -118,7 +118,7 @@ const Gallery = () => {
         </div>
 
         {/* Instagram Integration */}
-        <div className="mt-20 text-center">
+        <div className="mt-20 text-center bg-gray-500/10 rounded-2xl p-8 md:p-12">
           <h3 className="text-3xl font-bold text-coffee mb-6">
             Follow Us on Instagram
           </h3>
@@ -141,9 +141,9 @@ const Gallery = () => {
                 href="https://instagram.com/feels_coffeexstudio" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-coffee text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-coffee/90 transition-colors"
+                className="inline-flex items-center gap-2 text-lg px-8 py-3 hover:border-2 hover:border-coffee hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
               >
-                Follow on Instagram
+                Follow Us on Instagram
               </a>
             </div>
           </div>

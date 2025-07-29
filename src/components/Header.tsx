@@ -132,7 +132,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               {/* Menu Footer */}
               <div className="p-4 border-t border-border space-y-3">
                 <Button 
-                  variant="hero" 
+                  variant="outline" 
                   className="w-full"
                   onClick={() => handleNavClick("contact")}
                 >

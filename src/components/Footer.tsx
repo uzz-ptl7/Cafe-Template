@@ -128,14 +128,14 @@ const Footer = ({ setActiveSection }: FooterProps) => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 variant="outline" 
-                className="border-border text-foreground hover:bg-coffee/20 hover:text-coffee hover:border-coffee"
+                className="text-lg px-4 py-4 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
                 onClick={() => setActiveSection("contact")}
               >
                 Book a Table
               </Button>
               <Button 
                 variant="outline" 
-                className="border-border text-foreground hover:bg-coffee/20 hover:text-coffee hover:border-coffee"
+                className="text-lg px-4 py-4 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
                 onClick={() => setActiveSection("menu")}
               >
                 View Menu
@@ -150,12 +150,20 @@ const Footer = ({ setActiveSection }: FooterProps) => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm text-center md:text-left">
-              © 2024 Feels Coffee Kigali. All rights reserved.
+              © 2025 Feels Coffee Kigali. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
-              <span>Made with</span>
-              <Heart className="h-4 w-4 text-coffee" />
-              <span>in Kigali</span>
+              <p className="font-dancing text-accent mx-2">
+                Made with ❤️ in Rwanda by the{" "}
+                <a 
+                  href="https://www.sitecraftersz.co/" 
+                  className="underline hover:text-gray-400 duration-500" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Sitecrafters Team
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -98,32 +98,29 @@ const Contact = () => {
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Personal Information */}
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange("name", e.target.value)}
-                      placeholder="Your full name"
-                      required
-                      className="mt-1"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="email">Email *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange("email", e.target.value)}
-                      placeholder="your.email@example.com"
-                      required
-                      className="mt-1"
-                    />
-                  </div>
+                <div>
+                  <Label htmlFor="name">Full Name *</Label>
+                  <Input
+                    id="name"
+                    value={formData.name}
+                    onChange={(e) => handleInputChange("name", e.target.value)}
+                    placeholder="Your full name"
+                    required
+                    className="mt-1 py-6"
+                  />
                 </div>
-
+                <div>
+                  <Label htmlFor="email">Email *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange("email", e.target.value)}
+                    placeholder="your.email@example.com"
+                    required
+                    className="mt-1 py-6"
+                  />
+                </div>
                 <div>
                   <Label htmlFor="phone">Phone Number</Label>
                   <Input
@@ -132,7 +129,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
                     placeholder="+250 xxx xxx xxx"
-                    className="mt-1"
+                    className="mt-1 py-6"
                   />
                 </div>
 
@@ -140,7 +137,7 @@ const Contact = () => {
                 <div>
                   <Label htmlFor="type">Type of Inquiry *</Label>
                   <Select value={formData.type} onValueChange={(value) => handleInputChange("type", value)} required>
-                    <SelectTrigger className="mt-1">
+                    <SelectTrigger className="mt-1 py-6">
                       <SelectValue placeholder="Select inquiry type" />
                     </SelectTrigger>
                     <SelectContent>
@@ -155,7 +152,7 @@ const Contact = () => {
 
                 {/* Reservation Details (conditional) */}
                 {(formData.type === "reservation" || formData.type === "event") && (
-                  <div className="grid md:grid-cols-3 gap-4 p-4 bg-accent-light rounded-lg">
+                  <div className="grid md:grid-cols-3 gap-4 p-4 bg-primary-foreground rounded-lg">
                     <div>
                       <Label htmlFor="date">Preferred Date</Label>
                       <Input
@@ -163,7 +160,7 @@ const Contact = () => {
                         type="date"
                         value={formData.date}
                         onChange={(e) => handleInputChange("date", e.target.value)}
-                        className="mt-1"
+                        className="mt-1 bg-white/10"
                       />
                     </div>
                     <div>
@@ -173,7 +170,7 @@ const Contact = () => {
                         type="time"
                         value={formData.time}
                         onChange={(e) => handleInputChange("time", e.target.value)}
-                        className="mt-1"
+                        className="mt-1 bg-white/10"
                       />
                     </div>
                     <div>
@@ -186,7 +183,7 @@ const Contact = () => {
                         placeholder="1-20"
                         min="1"
                         max="20"
-                        className="mt-1"
+                        className="mt-1 bg-white/10"
                       />
                     </div>
                   </div>
@@ -209,9 +206,9 @@ const Contact = () => {
                 {/* Submit Button */}
                 <Button 
                   type="submit" 
-                  className="w-full" 
+                  className="w-full text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700" 
                   size="lg"
-                  variant="hero"
+                  variant="outline"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -244,7 +241,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Actions */}
-            <Card className="shadow-lg bg-gradient-to-r from-coffee/5 to-accent-light/20">
+            <Card className="shadow-lg bg-gradient-to-br from-gray-500/5 to-gray-500/15">
               <CardContent className="p-8">
                 <h4 className="text-xl font-semibold text-coffee mb-6 text-center">
                   Quick Actions
@@ -252,7 +249,7 @@ const Contact = () => {
                 <div className="space-y-4">
                   <Button 
                     variant="outline" 
-                    className="w-full justify-start" 
+                    className="w-full justify-center text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700" 
                     size="lg"
                     onClick={() => {
                       const contactForm = document.querySelector('form');
@@ -266,7 +263,7 @@ const Contact = () => {
                   </Button>
                   <Button 
                     variant="outline" 
-                    className="w-full justify-start" 
+                    className="w-full justify-center text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700" 
                     size="lg"
                     onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
                   >
@@ -275,7 +272,7 @@ const Contact = () => {
                   </Button>
                   <Button 
                     variant="outline" 
-                    className="w-full justify-start" 
+                    className="w-full justify-center text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700" 
                     size="lg"
                     onClick={() => {
                       const contactForm = document.querySelector('form');
@@ -288,27 +285,6 @@ const Contact = () => {
                     Plan Private Event
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* Business Hours Summary */}
-            <Card className="shadow-lg">
-              <CardContent className="p-8 text-center">
-                <h4 className="text-xl font-semibold text-coffee mb-4">
-                  Visit Us Today
-                </h4>
-                <div className="space-y-2 text-muted-foreground">
-                  <p><strong>Address:</strong> KG-628 Street, Rugando, Kigali</p>
-                  <p><strong>Hours:</strong> Daily 7:30 AM - 11:00 PM</p>
-                  <p><strong>Parking:</strong> Available on-site</p>
-                </div>
-                <Button 
-                  variant="coffee" 
-                  className="mt-6"
-                  onClick={() => window.open('https://maps.google.com/?q=KG-628+Street,+Rugando,+Kigali', '_blank')}
-                >
-                  Get Directions
-                </Button>
               </CardContent>
             </Card>
           </div>
@@ -326,7 +302,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                variant="hero" 
+                variant="outline" 
                 size="lg"
                 onClick={() => {
                   const contactForm = document.getElementById('contact');
@@ -334,11 +310,13 @@ const Contact = () => {
                     contactForm.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
+                className="text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
               >
                 Reserve Your Table
               </Button>
               <Button 
                 variant="outline" 
+                className="text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
                 size="lg"
                 onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
               >
