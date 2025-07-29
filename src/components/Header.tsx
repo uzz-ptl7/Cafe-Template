@@ -98,7 +98,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
           <div className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-background border-l border-border shadow-xl">
             <div className="flex flex-col h-full">
               {/* Menu Header */}
-              <div className="p-6 border-b border-border">
+              <div className="p-4 border-b border-border">
                 <div className="flex items-center gap-2">
                   <Coffee className="h-6 w-6 text-coffee" />
                   <div>
@@ -109,14 +109,14 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               </div>
 
               {/* Menu Items */}
-              <nav className="flex-1 p-6">
-                <div className="space-y-4">
+              <nav className="flex-1 p-4">
+                <div className="space-y-2">
                   {menuItems.map((item) => (
                     <button
                       key={item.id}
                       onClick={() => handleNavClick(item.id)}
                       className={cn(
-                        "w-full text-left py-3 px-4 rounded-lg text-base font-medium transition-all duration-300",
+                        "w-full text-left py-2 px-3 rounded-lg text-base font-medium transition-all duration-300",
                         activeSection === item.id
                           ? "text-coffee bg-coffee/10 font-semibold"
                           : "text-foreground hover:text-coffee hover:bg-secondary"
@@ -129,7 +129,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               </nav>
 
               {/* Menu Footer */}
-              <div className="p-6 border-t border-border space-y-4">
+              <div className="p-4 border-t border-border space-y-3">
                 <Button 
                   variant="hero" 
                   className="w-full"
@@ -137,7 +137,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                 >
                   Reserve Table
                 </Button>
-                <div className="space-y-2 text-sm text-muted-foreground">
+                <div className="space-y-1 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4" />
                     <span>KG-628 St, Rugando, Kigali</span>

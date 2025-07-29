@@ -132,22 +132,19 @@ const Location = () => {
 
           {/* Map and Features */}
           <div className="space-y-8">
-            {/* Map Placeholder */}
+            {/* Map */}
             <Card className="shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-accent-light/30 to-coffee/10 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-16 w-16 text-coffee mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold text-coffee mb-2">Interactive Map</h4>
-                  <p className="text-muted-foreground mb-4">
-                    Click below to view our location on Google Maps
-                  </p>
-                  <Button 
-                    variant="coffee"
-                    onClick={() => window.open('https://maps.google.com/?q=KG-628+Street,+Rugando,+Kigali', '_blank')}
-                  >
-                    View on Map
-                  </Button>
-                </div>
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5!2d30.0619!3d-1.9441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNTYnMzguOCJTIDMwwrAwMycxOC44IkU!5e0!3m2!1sen!2srw!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Feels Coffee Location"
+                />
               </div>
             </Card>
 

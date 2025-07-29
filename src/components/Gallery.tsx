@@ -102,8 +102,8 @@ const Gallery = () => {
                   </Badge>
                 </div>
 
-                {/* Image Info Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                {/* Image Info Overlay - Only visible on hover */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h4 className="font-semibold text-white mb-1">
                     {item.title}
                   </h4>
