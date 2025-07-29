@@ -6,60 +6,60 @@
 
 @layer base {
   :root {
-    /* Dark theme colors - coffee shop atmosphere */
-    --background: 20 14% 8%;
-    --foreground: 35 10% 85%;
+    /* Modern dark theme - sophisticated coffee shop */
+    --background: 222 47% 4%;
+    --foreground: 34 8% 91%;
 
-    --card: 20 14% 10%;
-    --card-foreground: 35 10% 85%;
+    --card: 220 47% 6%;
+    --card-foreground: 34 8% 91%;
 
-    --popover: 20 14% 10%;
-    --popover-foreground: 35 10% 85%;
+    --popover: 220 47% 6%;
+    --popover-foreground: 34 8% 91%;
 
     /* Coffee-inspired primary colors */
-    --primary: 35 10% 85%;
-    --primary-foreground: 20 14% 8%;
-    --primary-hover: 35 15% 90%;
+    --primary: 34 8% 91%;
+    --primary-foreground: 222 47% 4%;
+    --primary-hover: 34 12% 95%;
 
-    /* Dark secondary tones */
-    --secondary: 20 14% 15%;
-    --secondary-foreground: 35 10% 85%;
+    /* Rich secondary tones */
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 34 8% 91%;
 
-    /* Muted dark tones */
-    --muted: 20 14% 12%;
-    --muted-foreground: 35 5% 55%;
+    /* Sophisticated muted tones */
+    --muted: 217 32% 14%;
+    --muted-foreground: 210 15% 65%;
 
-    /* Accent warm orange for coffee warmth */
-    --accent: 25 60% 55%;
-    --accent-foreground: 20 14% 8%;
-    --accent-light: 25 35% 25%;
+    /* Elegant copper accent */
+    --accent: 24 70% 60%;
+    --accent-foreground: 222 47% 4%;
+    --accent-light: 24 45% 25%;
 
-    /* Coffee bean brown */
-    --coffee: 25 60% 55%;
-    --coffee-light: 25 40% 75%;
+    /* Rich coffee brown */
+    --coffee: 24 70% 60%;
+    --coffee-light: 24 50% 75%;
 
-    /* Warm highlights */
-    --warm: 25 60% 55%;
-    --warm-foreground: 20 14% 8%;
+    /* Warm copper highlights */
+    --warm: 24 70% 60%;
+    --warm-foreground: 222 47% 4%;
 
     --destructive: 0 65% 55%;
     --destructive-foreground: 35 15% 96%;
 
-    --border: 20 14% 18%;
-    --input: 20 14% 15%;
-    --ring: 25 60% 55%;
+    --border: 217 32% 20%;
+    --input: 217 32% 17%;
+    --ring: 24 70% 60%;
 
     --radius: 0.75rem;
 
-    /* Coffee-themed gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(25 45% 20% / 0.8), hsl(25 35% 25% / 0.6));
-    --gradient-warm: linear-gradient(180deg, hsl(35 20% 88%), hsl(35 15% 92%));
-    --gradient-coffee: linear-gradient(135deg, hsl(25 45% 20%), hsl(25 35% 25%));
+    /* Modern coffee gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 4% / 0.9), hsl(220 47% 6% / 0.7));
+    --gradient-warm: linear-gradient(180deg, hsl(34 8% 91%), hsl(34 12% 95%));
+    --gradient-coffee: linear-gradient(135deg, hsl(24 70% 60%), hsl(24 50% 50%));
     
-    /* Elegant shadows */
-    --shadow-soft: 0 4px 20px hsl(25 25% 15% / 0.1);
-    --shadow-warm: 0 8px 30px hsl(35 40% 85% / 0.4);
-    --shadow-coffee: 0 10px 40px hsl(25 45% 20% / 0.15);
+    /* Sophisticated shadows */
+    --shadow-soft: 0 4px 25px hsl(222 47% 4% / 0.15);
+    --shadow-warm: 0 8px 35px hsl(24 70% 60% / 0.2);
+    --shadow-coffee: 0 12px 45px hsl(222 47% 4% / 0.25);
 
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

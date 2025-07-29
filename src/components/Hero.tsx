@@ -53,7 +53,7 @@ const Hero = ({ setActiveSection }: HeroProps) => {
           <Button 
             variant="hero" 
             size="lg"
-            onClick={() => window.open("https://l.instagram.com/?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1JlKq7DD127b6hLgztV6aUefriTxR5_aK%2Fview%3Fusp%3Ddrivesdk%26fbclid%3DPAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA&e=AT2B3e8sklSL_VfEsRYq1t_x_VPtmwxtGZ4-KYQDscsn75h4nCLC9eMlA6MPLmS5yJlGM3-xEZR57LK78VvdjzBTri7sNBuzDKh8Nc0", "_blank")}
+            onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
             className="text-lg px-8 py-6"
           >
             View Full Menu

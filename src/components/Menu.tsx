@@ -166,8 +166,12 @@ const Menu = () => {
           <p className="text-muted-foreground mb-6">
             All prices are in Rwandan Francs (RWF). Taste the difference of fresh, quality ingredients.
           </p>
-          <Button variant="hero" size="lg">
-            Order Online
+          <Button 
+            variant="hero" 
+            size="lg"
+            onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
+          >
+            View Full Menu
           </Button>
         </div>
       </div>

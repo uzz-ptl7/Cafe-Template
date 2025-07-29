@@ -60,9 +60,9 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
                   className={cn(
-                    "text-xs font-medium transition-colors hover:text-coffee relative",
+                    "text-sm font-medium transition-all duration-300 hover:text-coffee relative py-2",
                     activeSection === item.id 
-                      ? "text-coffee after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-0.5 after:bg-coffee after:rounded-full" 
+                      ? "text-coffee font-semibold before:absolute before:bottom-0 before:left-0 before:right-0 before:h-0.5 before:bg-coffee before:rounded-full" 
                       : "text-foreground"
                   )}
                 >
@@ -115,7 +115,12 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                     <button
                       key={item.id}
                       onClick={() => handleNavClick(item.id)}
-                      className="w-full text-left py-3 px-4 rounded-lg text-base font-medium transition-colors text-foreground hover:text-coffee hover:bg-secondary"
+                      className={cn(
+                        "w-full text-left py-3 px-4 rounded-lg text-base font-medium transition-all duration-300",
+                        activeSection === item.id
+                          ? "text-coffee bg-coffee/10 font-semibold"
+                          : "text-foreground hover:text-coffee hover:bg-secondary"
+                      )}
                     >
                       {item.label}
                     </button>

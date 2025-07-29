@@ -11,9 +11,9 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
 
-  // Handle smooth scrolling to sections
-  useEffect(() => {
-    if (activeSection === "home") {
+  // Handle smooth scrolling to sections only when navigation is clicked
+  const scrollToSection = (sectionId: string) => {
+    if (sectionId === "home") {
       const homeElement = document.getElementById("home");
       if (homeElement) {
         homeElement.scrollIntoView({ behavior: "smooth" });
@@ -21,13 +21,13 @@ const Index = () => {
       return;
     }
 
-    const element = document.getElementById(activeSection);
+    const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80; // Account for fixed header
       const elementPosition = element.offsetTop - offset;
       window.scrollTo({ top: elementPosition, behavior: "smooth" });
     }
-  }, [activeSection]);
+  };
 
   // Update active section based on scroll position
   useEffect(() => {
@@ -57,10 +57,19 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Header 
+        activeSection={activeSection} 
+        setActiveSection={(section) => {
+          setActiveSection(section);
+          scrollToSection(section);
+        }} 
+      />
       
       <main>
-        <Hero setActiveSection={setActiveSection} />
+        <Hero setActiveSection={(section) => {
+          setActiveSection(section);
+          scrollToSection(section);
+        }} />
         <Menu />
         <About />
         <Gallery />
@@ -68,7 +77,10 @@ const Index = () => {
         <Contact />
       </main>
       
-      <Footer setActiveSection={setActiveSection} />
+      <Footer setActiveSection={(section) => {
+        setActiveSection(section);
+        scrollToSection(section);
+      }} />
     </div>
   );
 };

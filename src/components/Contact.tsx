@@ -250,15 +250,40 @@ const Contact = () => {
                   Quick Actions
                 </h4>
                 <div className="space-y-4">
-                  <Button variant="outline" className="w-full justify-start" size="lg">
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-start" 
+                    size="lg"
+                    onClick={() => {
+                      const contactForm = document.querySelector('form');
+                      if (contactForm) {
+                        contactForm.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
                     <Calendar className="h-5 w-5 mr-3" />
                     Book a Table Online
                   </Button>
-                  <Button variant="outline" className="w-full justify-start" size="lg">
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-start" 
+                    size="lg"
+                    onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
+                  >
                     <Coffee className="h-5 w-5 mr-3" />
-                    Order for Pickup
+                    View Full Menu
                   </Button>
-                  <Button variant="outline" className="w-full justify-start" size="lg">
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-start" 
+                    size="lg"
+                    onClick={() => {
+                      const contactForm = document.querySelector('form');
+                      if (contactForm) {
+                        contactForm.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
                     <Users className="h-5 w-5 mr-3" />
                     Plan Private Event
                   </Button>
@@ -300,10 +325,23 @@ const Contact = () => {
               or a place to catch up with friends, we're here to make every moment special.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => {
+                  const contactForm = document.getElementById('contact');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 Reserve Your Table
               </Button>
-              <Button variant="outline" size="lg">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
+              >
                 View Our Menu
               </Button>
             </div>

@@ -112,12 +112,6 @@ const Gallery = () => {
                   </p>
                 </div>
 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-coffee/0 group-hover:bg-coffee/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <div className="text-white text-center">
-                    <p className="font-medium">View Full Size</p>
-                  </div>
-                </div>
               </div>
             </Card>
           ))}
