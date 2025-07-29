@@ -45,7 +45,7 @@ const Location = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 max-w-6xl mx-auto">
           {/* Location Info */}
           <div className="space-y-8">
             {/* Address Card */}
@@ -68,7 +68,7 @@ const Location = () => {
                   <div className="pt-4">
                     <Button 
                       variant="outline" 
-                      className="w-full"
+                      className="w-full text-lg px-8 py-5 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
                       onClick={() => window.open('https://maps.google.com/?q=KG-628+Street,+Rugando,+Kigali', '_blank')}
                     >
                       <MapPin className="h-4 w-4 mr-2" />
@@ -96,36 +96,9 @@ const Location = () => {
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 p-4 bg-accent-light rounded-lg">
-                  <p className="text-center text-accent font-medium">
+                  <p className="mt-6 text-center text-accent font-medium pt-2 border-t-2 border-gray-400/30">
                     Open 7 days a week for your convenience!
                   </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Contact Info */}
-            <Card className="shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-coffee">Get in Touch</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-coffee" />
-                    <div>
-                      <p className="font-medium text-coffee">Phone</p>
-                      <p className="text-muted-foreground">+250 123 456 789</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-coffee" />
-                    <div>
-                      <p className="font-medium text-coffee">Email</p>
-                      <p className="text-muted-foreground">hello@feelscoffee.rw</p>
-                    </div>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>

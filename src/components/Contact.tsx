@@ -86,7 +86,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <Card className="shadow-xl">
             <CardHeader>
