@@ -1,6 +1,5 @@
-import { MapPin, Clock, Phone, Mail, Instagram, Heart } from "lucide-react";
+import { Coffee, MapPin, Clock, Phone, Mail, Instagram, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import feelsCoffeeLogo from "@/assets/feels-coffee-logo.png";
 
 interface FooterProps {
   setActiveSection: (section: string) => void;
@@ -33,7 +32,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
           {/* Brand Section */}
           <div className="lg:col-span-1 text-center lg:text-left">
             <div className="flex items-center gap-2 mb-6 justify-center lg:justify-start">
-              <img src={feelsCoffeeLogo} alt="Feels Coffee Logo" className="h-8 w-8 object-contain" />
+              <Coffee className="h-8 w-8 text-coffee" />
               <div>
                 <h3 className="text-2xl font-bold">Feels Coffee</h3>
                 <p className="text-sm text-primary-foreground/80">Kigali</p>
