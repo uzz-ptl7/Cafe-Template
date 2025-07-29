@@ -25,7 +25,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-secondary to-muted text-foreground">
+    <footer className="bg-gradient-to-br from-primary-foreground to-muted text-foreground">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 max-w-6xl mx-auto">

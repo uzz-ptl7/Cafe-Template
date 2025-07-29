@@ -43,7 +43,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div 
-              className="flex items-center gap-2 cursor-pointer"
+              className="flex items-center gap-2 cursor-default hover:scale-105 transition-transform duration-500"
               onClick={() => handleNavClick("home")}
             >
               <Coffee className="h-8 w-8 text-coffee" />
@@ -73,6 +73,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                 variant="hero" 
                 size="sm"
                 onClick={() => handleNavClick("contact")}
+                className="hover:border-coffee hover:border hover:bg-transparent hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
               >
                 Reserve Table
               </Button>
@@ -99,7 +100,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
             <div className="flex flex-col h-full">
               {/* Menu Header */}
               <div className="p-4 border-b border-border">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 cursor-default">
                   <Coffee className="h-6 w-6 text-coffee" />
                   <div>
                     <h2 className="text-lg font-bold text-coffee">Feels Coffee</h2>

@@ -81,7 +81,7 @@ const About = () => {
         </div>
 
         {/* Mission & Values */}
-        <div className="bg-gradient-to-r from-secondary to-accent-light rounded-2xl p-8 md:p-12">
+        <div className="bg-gray-600/10 rounded-2xl p-8 md:p-12">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold text-coffee mb-8">Our Mission</h3>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
