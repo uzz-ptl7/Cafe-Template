@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-hover shadow-md hover:shadow-lg",
+        default: "bg-primary text-primary-foreground hover:bg-coffee hover:text-coffee-foreground shadow-md hover:shadow-lg transition-all duration-300",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg transition-all duration-300",
         outline:
-          "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground",
+          "border-2 border-primary text-primary bg-transparent hover:bg-coffee hover:text-primary-foreground hover:border-coffee transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm hover:shadow-md",
-        ghost: "hover:bg-accent-light hover:text-accent",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-coffee text-primary-foreground hover:bg-coffee/90 shadow-lg hover:shadow-xl text-base font-semibold",
-        warm: "bg-warm text-warm-foreground hover:bg-warm/80 shadow-md hover:shadow-lg",
-        coffee: "bg-coffee text-primary-foreground hover:bg-coffee/90 border border-coffee-light",
+          "bg-secondary text-secondary-foreground hover:bg-coffee hover:text-primary-foreground shadow-sm hover:shadow-md transition-all duration-300",
+        ghost: "hover:bg-coffee/10 hover:text-coffee transition-all duration-300",
+        link: "text-primary underline-offset-4 hover:underline hover:text-coffee transition-all duration-300",
+        hero: "bg-coffee text-primary-foreground hover:bg-coffee/90 hover:shadow-coffee shadow-lg hover:shadow-xl text-base font-semibold transition-all duration-300",
+        warm: "bg-warm text-warm-foreground hover:bg-coffee hover:text-primary-foreground shadow-md hover:shadow-lg transition-all duration-300",
+        coffee: "bg-coffee text-primary-foreground hover:bg-coffee/90 border border-coffee-light hover:shadow-coffee transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
