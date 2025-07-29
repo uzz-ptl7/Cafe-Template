@@ -6,48 +6,48 @@
 
 @layer base {
   :root {
-    /* Core café colors - warm and inviting */
-    --background: 35 15% 96%;
-    --foreground: 25 25% 15%;
+    /* Dark theme colors - coffee shop atmosphere */
+    --background: 20 14% 8%;
+    --foreground: 35 10% 85%;
 
-    --card: 35 25% 98%;
-    --card-foreground: 25 25% 15%;
+    --card: 20 14% 10%;
+    --card-foreground: 35 10% 85%;
 
-    --popover: 35 25% 98%;
-    --popover-foreground: 25 25% 15%;
+    --popover: 20 14% 10%;
+    --popover-foreground: 35 10% 85%;
 
     /* Coffee-inspired primary colors */
-    --primary: 25 35% 25%;
-    --primary-foreground: 35 15% 96%;
-    --primary-hover: 25 40% 20%;
+    --primary: 35 10% 85%;
+    --primary-foreground: 20 14% 8%;
+    --primary-hover: 35 15% 90%;
 
-    /* Warm secondary tones */
-    --secondary: 35 20% 88%;
-    --secondary-foreground: 25 35% 25%;
+    /* Dark secondary tones */
+    --secondary: 20 14% 15%;
+    --secondary-foreground: 35 10% 85%;
 
-    /* Muted earth tones */
-    --muted: 35 15% 90%;
-    --muted-foreground: 25 15% 45%;
+    /* Muted dark tones */
+    --muted: 20 14% 12%;
+    --muted-foreground: 35 5% 55%;
 
-    /* Accent green for freshness */
-    --accent: 120 20% 35%;
-    --accent-foreground: 35 15% 96%;
-    --accent-light: 120 15% 85%;
+    /* Accent warm orange for coffee warmth */
+    --accent: 25 60% 55%;
+    --accent-foreground: 20 14% 8%;
+    --accent-light: 25 35% 25%;
 
     /* Coffee bean brown */
-    --coffee: 25 45% 20%;
-    --coffee-light: 25 25% 75%;
+    --coffee: 25 60% 55%;
+    --coffee-light: 25 40% 75%;
 
     /* Warm highlights */
-    --warm: 35 40% 85%;
-    --warm-foreground: 25 35% 25%;
+    --warm: 25 60% 55%;
+    --warm-foreground: 20 14% 8%;
 
     --destructive: 0 65% 55%;
     --destructive-foreground: 35 15% 96%;
 
-    --border: 35 15% 85%;
-    --input: 35 15% 90%;
-    --ring: 25 35% 25%;
+    --border: 20 14% 18%;
+    --input: 20 14% 15%;
+    --ring: 25 60% 55%;
 
     --radius: 0.75rem;
 

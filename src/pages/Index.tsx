@@ -14,7 +14,10 @@ const Index = () => {
   // Handle smooth scrolling to sections
   useEffect(() => {
     if (activeSection === "home") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      const homeElement = document.getElementById("home");
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: "smooth" });
+      }
       return;
     }
 
@@ -29,16 +32,10 @@ const Index = () => {
   // Update active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["menu", "about", "gallery", "location", "contact"];
+      const sections = ["home", "menu", "about", "gallery", "location", "contact"];
       const scrollPosition = window.scrollY + 120;
 
-      // Check if we're at the top for home section
-      if (window.scrollY < 100) {
-        setActiveSection("home");
-        return;
-      }
-
-      // Check other sections
+      // Check all sections including home
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -51,6 +48,7 @@ const Index = () => {
           }
         }
       }
+
     };
 
     window.addEventListener("scroll", handleScroll);

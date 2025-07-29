@@ -54,20 +54,26 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-8">
               {menuItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-coffee",
-                    activeSection === item.id ? "text-coffee" : "text-foreground"
+                    "text-xs font-medium transition-colors hover:text-coffee relative",
+                    activeSection === item.id 
+                      ? "text-coffee after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-0.5 after:bg-coffee after:rounded-full" 
+                      : "text-foreground"
                   )}
                 >
                   {item.label}
                 </button>
               ))}
-              <Button variant="hero" size="sm">
+              <Button 
+                variant="hero" 
+                size="sm"
+                onClick={() => handleNavClick("contact")}
+              >
                 Reserve Table
               </Button>
             </nav>
@@ -76,7 +82,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="lg:hidden"
               onClick={toggleMenu}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -87,7 +93,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 md:hidden">
+        <div className="fixed inset-0 z-40 lg:hidden">
           <div className="fixed inset-0 bg-black/50" onClick={toggleMenu} />
           <div className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-background border-l border-border shadow-xl">
             <div className="flex flex-col h-full">
@@ -109,12 +115,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                     <button
                       key={item.id}
                       onClick={() => handleNavClick(item.id)}
-                      className={cn(
-                        "w-full text-left py-3 px-4 rounded-lg text-base font-medium transition-colors",
-                        activeSection === item.id 
-                          ? "bg-accent-light text-accent" 
-                          : "text-foreground hover:bg-secondary"
-                      )}
+                      className="w-full text-left py-3 px-4 rounded-lg text-base font-medium transition-colors text-foreground hover:text-coffee hover:bg-secondary"
                     >
                       {item.label}
                     </button>
@@ -124,7 +125,11 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
 
               {/* Menu Footer */}
               <div className="p-6 border-t border-border space-y-4">
-                <Button variant="hero" className="w-full">
+                <Button 
+                  variant="hero" 
+                  className="w-full"
+                  onClick={() => handleNavClick("contact")}
+                >
                   Reserve Table
                 </Button>
                 <div className="space-y-2 text-sm text-muted-foreground">

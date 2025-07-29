@@ -171,26 +171,6 @@ const Location = () => {
               })}
             </div>
 
-            {/* Directions */}
-            <Card className="shadow-lg bg-gradient-to-r from-secondary to-accent-light">
-              <CardContent className="p-8 text-center">
-                <h4 className="text-xl font-semibold text-coffee mb-4">
-                  Getting Here
-                </h4>
-                <p className="text-muted-foreground mb-6">
-                  Located in the vibrant Rugando area, we're easily accessible by car, 
-                  public transport, or on foot. Look for our distinctive coffee signage!
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <Button variant="outline" size="sm">
-                    By Car
-                  </Button>
-                  <Button variant="outline" size="sm">
-                    Public Transport
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

@@ -2,6 +2,20 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// Import gallery images
+import interior1 from "@/assets/gallery-interior-1.jpg";
+import interior2 from "@/assets/gallery-interior-2.jpg";
+import interior3 from "@/assets/gallery-interior-3.jpg";
+import drinks1 from "@/assets/gallery-drinks-1.jpg";
+import drinks2 from "@/assets/gallery-drinks-2.jpg";
+import drinks3 from "@/assets/gallery-drinks-3.jpg";
+import food1 from "@/assets/gallery-food-1.jpg";
+import food2 from "@/assets/gallery-food-2.jpg";
+import food3 from "@/assets/gallery-food-3.jpg";
+import atmosphere1 from "@/assets/gallery-atmosphere-1.jpg";
+import atmosphere2 from "@/assets/gallery-atmosphere-2.jpg";
+import atmosphere3 from "@/assets/gallery-atmosphere-3.jpg";
+
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -13,20 +27,20 @@ const Gallery = () => {
     { id: "atmosphere", name: "Atmosphere" }
   ];
 
-  // Placeholder gallery items - in real implementation, these would be actual photos
+  // Gallery items with actual images
   const galleryItems = [
-    { id: 1, category: "interior", title: "Cozy Seating Area", description: "Comfortable spaces for work and relaxation" },
-    { id: 2, category: "drinks", title: "Signature Coffee", description: "Our premium coffee creations" },
-    { id: 3, category: "food", title: "Fresh Breakfast", description: "Morning delights to start your day" },
-    { id: 4, category: "atmosphere", title: "Terrace Views", description: "Beautiful outdoor dining experience" },
-    { id: 5, category: "interior", title: "Modern Design", description: "Contemporary café aesthetics" },
-    { id: 6, category: "drinks", title: "Tropical Smoothies", description: "Fresh fruit smoothie creations" },
-    { id: 7, category: "food", title: "Gourmet Burgers", description: "Handcrafted burger perfection" },
-    { id: 8, category: "atmosphere", title: "Evening Ambiance", description: "Perfect for cocktails and conversation" },
-    { id: 9, category: "drinks", title: "Cocktail Hour", description: "Expertly mixed signature cocktails" },
-    { id: 10, category: "food", title: "International Cuisine", description: "Diverse flavors from around the world" },
-    { id: 11, category: "interior", title: "Work-Friendly Spaces", description: "Perfect spots for productivity" },
-    { id: 12, category: "atmosphere", title: "Community Gathering", description: "Where connections are made" }
+    { id: 1, category: "interior", title: "Cozy Seating Area", description: "Comfortable spaces for work and relaxation", image: interior1 },
+    { id: 2, category: "drinks", title: "Signature Coffee", description: "Our premium coffee creations", image: drinks1 },
+    { id: 3, category: "food", title: "Fresh Breakfast", description: "Morning delights to start your day", image: food1 },
+    { id: 4, category: "atmosphere", title: "Terrace Views", description: "Beautiful outdoor dining experience", image: atmosphere1 },
+    { id: 5, category: "interior", title: "Modern Design", description: "Contemporary café aesthetics", image: interior2 },
+    { id: 6, category: "drinks", title: "Tropical Smoothies", description: "Fresh fruit smoothie creations", image: drinks2 },
+    { id: 7, category: "food", title: "Gourmet Burgers", description: "Handcrafted burger perfection", image: food2 },
+    { id: 8, category: "atmosphere", title: "Evening Ambiance", description: "Perfect for cocktails and conversation", image: atmosphere2 },
+    { id: 9, category: "drinks", title: "Cocktail Hour", description: "Expertly mixed signature cocktails", image: drinks3 },
+    { id: 10, category: "food", title: "International Cuisine", description: "Diverse flavors from around the world", image: food3 },
+    { id: 11, category: "interior", title: "Work-Friendly Spaces", description: "Perfect spots for productivity", image: interior3 },
+    { id: 12, category: "atmosphere", title: "Community Gathering", description: "Where connections are made", image: atmosphere3 }
   ];
 
   const filteredItems = activeFilter === "all" 
@@ -72,16 +86,13 @@ const Gallery = () => {
               className="group overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               <div className="relative">
-                {/* Placeholder for image - in real implementation, this would be an actual image */}
-                <div className="aspect-square bg-gradient-to-br from-coffee/20 via-warm/30 to-accent-light/20 flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <h4 className="font-semibold text-coffee mb-2 group-hover:text-coffee/80 transition-colors">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      {item.description}
-                    </p>
-                  </div>
+                {/* Gallery Image */}
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 
                 {/* Category Badge */}
@@ -89,6 +100,16 @@ const Gallery = () => {
                   <Badge variant="secondary" className="bg-white/90 text-coffee">
                     {filters.find(f => f.id === item.category)?.name}
                   </Badge>
+                </div>
+
+                {/* Image Info Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h4 className="font-semibold text-white mb-1">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-white/80">
+                    {item.description}
+                  </p>
                 </div>
 
                 {/* Hover Overlay */}
