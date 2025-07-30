@@ -136,7 +136,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                   className="w-full"
                   onClick={() => handleNavClick("contact")}
                 >
-                  Reserve Table
+                  Reserve A Table
                 </Button>
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
