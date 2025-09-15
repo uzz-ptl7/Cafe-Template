@@ -59,24 +59,24 @@ const Menu = () => {
     mains: {
       title: "Main Dishes",
       items: [
-        { name: "Special Feels Chicken", price: "8,000", description: "Our signature chicken dish", featured: true },
+        { name: "Special Chicken", price: "8,000", description: "Our signature chicken dish", featured: true },
         { name: "Chicken Biryani", price: "8,000", description: "Aromatic spiced rice with chicken" },
         { name: "Beef Pepper Steak", price: "8,000", description: "Tender beef with peppers" },
         { name: "Grilled Fish Fillet", price: "9,000", description: "Fresh tilapia grilled to perfection" },
         { name: "Chicken Alfredo", price: "7,500", description: "Creamy pasta with chicken" },
         { name: "King's Burger", price: "7,500", description: "Our premium burger creation", featured: true },
-        { name: "Feels Salad", price: "6,000", description: "Fresh mixed greens with house dressing" },
+        { name: "Salad", price: "6,000", description: "Fresh mixed greens with house dressing" },
         { name: "Share Platter", price: "25,000", description: "Perfect for sharing - chicken, beef, fish with sides" },
       ]
     },
     cocktails: {
       title: "Cocktails & Spirits",
       items: [
-        { name: "Feels Choice", price: "8,000", description: "Our signature cocktail", featured: true },
-        { name: "Feels Mojito", price: "7,500", description: "Fresh mint mojito with a twist" },
+        { name: "Special Choice", price: "8,000", description: "Our signature cocktail", featured: true },
+        { name: "Special Mojito", price: "7,500", description: "Fresh mint mojito with a twist" },
         { name: "Passion Fruit Margarita", price: "10,000", description: "Tropical passion fruit margarita" },
         { name: "Long Island", price: "10,000", description: "Classic Long Island iced tea" },
-        { name: "Take me to Feels", price: "10,000", description: "Our special cocktail creation" },
+        { name: "Take me to Special", price: "10,000", description: "Our special cocktail creation" },
         { name: "Virgin Mojito", price: "5,000", description: "Non-alcoholic mojito" },
         { name: "Red Wine", price: "7,000", description: "Selection of red wines" },
         { name: "White Wine", price: "7,000", description: "Selection of white wines" },
@@ -169,7 +169,7 @@ const Menu = () => {
           <Button 
             variant="outline" 
             size="lg"
-            onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
+            onClick={() => window.open("#", "_blank")}
             className="text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
           >
             View Full Menu

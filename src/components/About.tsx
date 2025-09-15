@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Heart,
       title: "Cozy Atmosphere",
-      description: "A warm, welcoming space that feels like your second home in Kigali."
+      description: "A warm, welcoming space that feels like your second home."
     },
     {
       icon: Users,
@@ -31,10 +31,10 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-coffee mb-6">
-            About Feels Coffee
+            About Our Cafe
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            More than just a café, Feels Coffee is Kigali's home for coffee lovers, 
+            More than just a café, we’re a home for coffee lovers, 
             digital nomads, and anyone seeking a perfect blend of comfort and quality.
           </p>
         </div>
@@ -45,18 +45,18 @@ const About = () => {
             <h3 className="text-3xl font-bold text-coffee mb-6">Our Story</h3>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Nestled in the heart of Rugando, Kigali, Feels Coffee began with a simple vision: 
+                Nestled in the heart of Kigali, our cafe began with a simple vision: 
                 to create a space where every sip and bite truly feels like home. We believe that 
                 great coffee is more than just a beverage—it's a moment of connection, creativity, and comfort.
               </p>
               <p>
-                Our beautiful terrace offers stunning views while you enjoy our diverse menu 
-                featuring both international favorites and authentic Rwandan flavors. Whether 
+                Our terrace offers stunning views while you enjoy our diverse menu 
+                featuring both international favorites and authentic local flavors. Whether 
                 you're catching up with friends, working on your next big project, or simply 
-                savoring a quiet moment, Feels Coffee provides the perfect backdrop.
+                savoring a quiet moment, our cafe provides the perfect backdrop.
               </p>
               <p>
-                From our signature "Take me to Feels" drinks to our carefully crafted meals, 
+                From our signature drinks to our carefully crafted meals, 
                 every item on our menu is prepared with love and attention to detail. We're 
                 not just serving food and drinks—we're creating experiences and building community.
               </p>

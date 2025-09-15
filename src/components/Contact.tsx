@@ -61,13 +61,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      content: "hello@feelscoffee.rw",
+      content: "hello@cafename.rw",
       description: "We'll respond within 24 hours"
     },
     {
       icon: Instagram,
       title: "Follow Us",
-      content: "@feels_coffeexstudio",
+      content: "@cafe_account",
       description: "For daily updates and specials"
     }
   ];
@@ -81,7 +81,7 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to experience the Feels Coffee difference? Contact us for reservations, 
+            Ready to experience our cafe? Contact us for reservations, 
             private events, or just to say hello. We'd love to hear from you!
           </p>
         </div>
@@ -265,7 +265,7 @@ const Contact = () => {
                     variant="outline" 
                     className="w-full justify-center text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700" 
                     size="lg"
-                    onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
+                    onClick={() => window.open("https://example.com/menu.pdf", "_blank")}
                   >
                     <Coffee className="h-5 w-5 mr-3" />
                     View Full Menu
@@ -294,7 +294,7 @@ const Contact = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-coffee/10 to-accent-light/10 rounded-2xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-coffee mb-4">
-              Experience the Feels Coffee Difference
+              Experience Our Cafe
             </h3>
             <p className="text-muted-foreground mb-6">
               Whether you're looking for your morning coffee fix, a productive workspace, 
@@ -318,7 +318,7 @@ const Contact = () => {
                 variant="outline" 
                 className="text-lg px-8 py-6 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
                 size="lg"
-                onClick={() => window.open("https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAaf-W6KFggddtJgKXIV0tQhSy6dC0XSN1xmPBtYz0dBVgy7gYXyrLbMBMc5OVA_aem_IPdjro9maaEbFm57zTBTXA", "_blank")}
+                onClick={() => window.open("https://example.com/menu.pdf", "_blank")}
               >
                 View Our Menu
               </Button>

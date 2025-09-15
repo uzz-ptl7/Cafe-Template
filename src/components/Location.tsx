@@ -61,7 +61,6 @@ const Location = () => {
                   <div>
                     <h4 className="font-semibold text-coffee mb-2">Address</h4>
                     <p className="text-muted-foreground">
-                      KG-628 Street, Rugando<br />
                       Kigali, Rwanda
                     </p>
                   </div>
@@ -69,7 +68,7 @@ const Location = () => {
                     <Button 
                       variant="outline" 
                       className="w-full text-lg px-8 py-5 hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
-                      onClick={() => window.open('https://maps.google.com/?q=KG-628+Street,+Rugando,+Kigali', '_blank')}
+                      onClick={() => window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510407.34217400616!2d29.53620306914678!3d-1.928981147360898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali%2C%20Rwanda!5e0!3m2!1sfr!2sca!4v1757959647652!5m2!1sfr!2sca', '_blank')}
                     >
                       <MapPin className="h-4 w-4 mr-2" />
                       Open in Google Maps
@@ -109,14 +108,14 @@ const Location = () => {
             <Card className="shadow-lg overflow-hidden">
               <div className="aspect-video">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5!2d30.0619!3d-1.9441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNTYnMzguOCJTIDMwwrAwMycxOC44IkU!5e0!3m2!1sen!2srw!4v1"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510407.34217400616!2d29.53620306914678!3d-1.928981147360898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali%2C%20Rwanda!5e0!3m2!1sfr!2sca!4v1757959647652!5m2!1sfr!2sca"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Feels Coffee Location"
+                  title="Coffee Location"
                 />
               </div>
             </Card>

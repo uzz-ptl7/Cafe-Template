@@ -34,7 +34,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
             <div className="flex items-center gap-2 mb-6 justify-center lg:justify-start">
               <Coffee className="h-8 w-8 text-coffee" />
               <div>
-                <h3 className="text-2xl font-bold">Feels Coffee</h3>
+                <h3 className="text-2xl font-bold">Cafe</h3>
                 <p className="text-sm text-muted-foreground">Kigali</p>
               </div>
             </div>
@@ -44,7 +44,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
             </p>
             <div className="flex gap-4 justify-center lg:justify-start">
               <a 
-                href="https://instagram.com/feels_coffeexstudio" 
+                href="https://instagram.com/#" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-muted-foreground/10 hover:bg-coffee/20 p-3 rounded-lg transition-colors"
@@ -91,7 +91,6 @@ const Footer = ({ setActiveSection }: FooterProps) => {
                 <MapPin className="h-5 w-5 text-coffee mt-0.5" />
                 <div>
                   <p className="text-foreground">
-                    KG-628 Street, Rugando<br />
                     Kigali, Rwanda
                   </p>
                 </div>
@@ -111,7 +110,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
               <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <Mail className="h-5 w-5 text-coffee" />
                 <p className="text-foreground">
-                  hello@feelscoffee.rw
+                  hello@cafe.rw
                 </p>
               </div>
             </div>
@@ -150,7 +149,7 @@ const Footer = ({ setActiveSection }: FooterProps) => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm text-center md:text-left">
-              © 2025 Feels Coffee Kigali. All rights reserved.
+              © 2025 Cafe Kigali. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
               <p className="font-dancing text-accent mx-2">

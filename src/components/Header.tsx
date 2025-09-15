@@ -48,7 +48,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
             >
               <Coffee className="h-8 w-8 text-coffee" />
               <div>
-                <h1 className="text-2xl font-bold text-coffee">Feels Coffee</h1>
+                <h1 className="text-2xl font-bold text-coffee">Coffee</h1>
                 <p className="text-xs text-muted-foreground">Kigali</p>
               </div>
             </div>

@@ -123,8 +123,8 @@ const Gallery = () => {
             Follow Us on Instagram
           </h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Stay updated with our latest creations, events, and the daily life at Feels Coffee. 
-            Follow @feels_coffeexstudio for behind-the-scenes moments and coffee inspiration.
+            Stay updated with our latest creations, events, and the daily life at our Cafe. 
+            Follow @cafename for behind-the-scenes moments and coffee inspiration.
           </p>
           
           {/* Instagram Feed Placeholder */}
@@ -133,12 +133,12 @@ const Gallery = () => {
               <div className="w-16 h-16 bg-coffee/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-2xl">📸</span>
               </div>
-              <h4 className="font-semibold text-coffee mb-2">@feels_coffeexstudio</h4>
+              <h4 className="font-semibold text-coffee mb-2">@cafename</h4>
               <p className="text-muted-foreground mb-6">
                 Connect with us on Instagram to see our latest posts and stories
               </p>
               <a 
-                href="https://instagram.com/feels_coffeexstudio" 
+                href="https://instagram.com/#" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-lg px-8 py-3 hover:border-2 hover:border-coffee hover:bg-black hover:text-primary text-primary-foreground bg-coffee rounded-lg shadow-none transition-all duration-700"
